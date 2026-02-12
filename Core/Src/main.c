@@ -22,6 +22,9 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+#include "tcs_app_main.h"  // Ana TCS fonksiyonları
+#include "tcs_input_cond.h" // Veri besleme fonksiyonları
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -72,6 +75,7 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
 
+
   /* USER CODE END 1 */
 
   /* MPU Configuration--------------------------------------------------------*/
@@ -83,7 +87,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+  TCS_Init();
   /* USER CODE END Init */
 
   /* Configure the system clock */
